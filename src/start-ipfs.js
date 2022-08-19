@@ -1,6 +1,6 @@
 'use strict'
 
-import * as Ctl from 'ipfsd-ctl'
+import * as Ctl from '/service/ReactNode/controlCenter/database/modules/ipfsd-ctl/dist/index.js'
 import testAPIs from './test-apis.js'
 
 /**

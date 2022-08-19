@@ -1,9 +1,9 @@
 'use strict'
 
-import { sha256 } from 'multiformats/hashes/sha2'
-import * as json from 'multiformats/codecs/json'
-import { CID } from 'multiformats/cid'
-import { base58btc } from 'multiformats/bases/base58'
+import { sha256 } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/hashes/sha2.js';
+import * as json from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/codecs/json.js';
+import { CID } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/cid.js';
+import { base58btc } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/bases/base58.js';
 
 const defaultBase = base58btc
 
