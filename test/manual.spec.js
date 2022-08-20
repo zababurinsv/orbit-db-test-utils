@@ -52,7 +52,7 @@ export default () => {
         try {
           ipfsd = await startIpfs('xxx')
         } catch (e) {
-          const expected = 'Wanted API type "xxx" is unknown. Available types: js-ipfs, go-ipfs'
+          const expected = 'Wanted API type "xxx" is unknown. Available types: js-ipfs'
           assert.strictEqual(e.message, expected)
           await stopIpfs(ipfsd)
         }
