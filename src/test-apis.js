@@ -15,7 +15,7 @@ const jsIpfs = {
     type: 'proc',
     test: true,
     disposable: true,
-    ipfsModule: ipfsModule
+    ipfsModule: ipfsModule.default
   }
 }
 

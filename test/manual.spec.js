@@ -25,6 +25,7 @@ export default () => {
 
           const id1 = await getIpfsPeerId(ipfsd1.api)
           const id2 = await getIpfsPeerId(ipfsd2.api)
+          console.log('<<< @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ >>>')
           assert.notEqual(id1, id2)
 
           await connectPeers(ipfsd1.api, ipfsd2.api)
