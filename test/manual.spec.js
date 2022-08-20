@@ -7,7 +7,7 @@ import {
   testAPIs,
   getIpfsPeerId,
   waitForPeers
-} from "../index.js";
+} from "/tests/database/orbit-db-test-utils/index.js";
 
 export default () => {
   describe('Manual Workflow', function () {

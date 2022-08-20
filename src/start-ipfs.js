@@ -1,7 +1,7 @@
 'use strict'
 
 import * as Ctl from '/service/ReactNode/controlCenter/database/modules/ipfsd-ctl/dist/index.js'
-import testAPIs from './test-apis.js'
+import testAPIs from '/tests/database/orbit-db-test-utils/src/test-apis.js'
 
 /**
  * Start an IPFS instance

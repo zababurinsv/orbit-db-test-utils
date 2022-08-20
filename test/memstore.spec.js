@@ -1,4 +1,4 @@
-import { MemStore } from '../index.js';
+import { MemStore } from "/tests/database/orbit-db-test-utils/index.js";
 const assert = window['@newkind/tests'].assert;
 export default () => {
   describe('MemStore', function () {

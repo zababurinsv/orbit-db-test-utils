@@ -1,9 +1,9 @@
 'use strict'
 
-import { sha256 } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/hashes/sha2.js';
-import * as json from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/codecs/json.js';
-import { CID } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/cid.js';
-import { base58btc } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/bases/base58.js';
+import { sha256 } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/src/hashes/sha2.js';
+import * as json from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/src/codecs/json.js';
+import { CID } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/src/cid.js';
+import { base58btc } from '/service/ReactNode/controlCenter/database/modules/multiformats/dist/src/bases/base58.js';
 
 const defaultBase = base58btc
 
@@ -40,7 +40,7 @@ class MemStore {
   async get (cid) {
     const data = this._store.get(cid.toString(defaultBase))
 
-    // TODO: Change this to refs
+    //TODO: Change this to refs
     const links = ['next', 'heads']
     links.forEach((prop) => {
       if (data[prop]) {
